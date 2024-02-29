@@ -6,6 +6,8 @@
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -47,7 +49,7 @@ main {
     flex-direction: column; 
     align-items: center; 
     justify-content: center;
-    font-family: 'Times New Roman', Times, serif;
+    margin: 18vh 0 30vh 0;
 }
 
 #menuHead {
@@ -60,6 +62,25 @@ main {
     color: whitesmoke;
     text-shadow: 2px 2px black;
 }
+
+#menu {
+    width: 48%;
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.type {
+    margin: 10px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    font-size: 30px;
+}
+#AllUCanEat {margin: 10px 10px 10px 0; font-size: 25px;}
+
+.food {font-size: 18px; font-weight: bolder;}
 
 
 
