@@ -24,6 +24,8 @@ header {
 header h1 {font-size: 35px;}
 header h1>p {font-size: 15px; margin: -10px 0 0 5px; color: green;}
 
+#logo {width: 100px;}
+
 .headerBtn {
     margin: 43px 0 0 20px;
     background: none;
