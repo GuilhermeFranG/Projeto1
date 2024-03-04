@@ -33,9 +33,10 @@ header h1>p {font-size: 15px; margin: -10px 0 0 5px; color: green;}
     background: none;
     border: none;
     font-size: larger;
+    font-weight: bold;
 }
-.headerlink {color: black; font-weight: bold; padding: 14px; border-radius: 8px; transition: 0.4s;}
-.headerlink:hover {background-color: lightgray; text-shadow: 1px 1px 5px darkgray;}
+.headerlink {color: green; text-shadow: 0px 1px 1px greenyellow; padding: 14px; border-radius: 12px; transition: 0.4s ease;}
+.headerlink:hover {background-color: maroon; color: white; text-shadow: none; border: 1px groove black;}
 .headerlink:active {opacity: 0.7;}
 
 span {color: darkred; font-style: italic; font-size: 40px;}
@@ -106,8 +107,8 @@ fieldset {
     padding: 20px;
 }
 
-input[type="text"] {transition: 0.35s ease-in-out;}
-input[type="text"]:focus {box-shadow: 1px 6px 6px 0px grey;}
+input {transition: 0.35s ease-in-out;}
+input:focus {box-shadow: 1px 6px 6px 0px grey;}
 
 
 
@@ -122,7 +123,7 @@ input[type="text"]:focus {box-shadow: 1px 6px 6px 0px grey;}
     header {margin: 50px 0 0; height: 100px; justify-content: baseline;}
 }
 @media screen and (max-width:889px) {
-    header h1, header h1>p {
+    header h1 {
         display: none;
     }
 }
