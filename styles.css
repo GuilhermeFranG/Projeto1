@@ -12,6 +12,8 @@ body {
 
 a {text-decoration: none;}
 
+.hidden {display: none;}
+
 
 
 
@@ -40,6 +42,8 @@ header h1>p {font-size: 15px; margin: -10px 0 0 5px; color: green;}
 
 span {color: darkred; font-style: italic; font-size: 40px;}
 span b {font-size: 60px; font-style: normal;}
+
+#smallMenu {font-size: 50px;}
 
 
 
