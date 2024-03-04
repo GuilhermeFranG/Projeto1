@@ -12,8 +12,6 @@ body {
 
 a {text-decoration: none;}
 
-.hidden {display: none;}
-
 
 
 
@@ -43,7 +41,7 @@ header h1>p {font-size: 15px; margin: -10px 0 0 5px; color: green;}
 span {color: darkred; font-style: italic; font-size: 40px;}
 span b {font-size: 60px; font-style: normal;}
 
-#smallMenu {font-size: 50px;}
+.headerSidebar {font-size: 33px; display: none;}
 
 
 
@@ -108,6 +106,27 @@ fieldset {
     padding: 20px;
 }
 
+input[type="text"] {transition: 0.35s ease-in-out;}
+input[type="text"]:focus {box-shadow: 1px 6px 6px 0px grey;}
+
+
+
+
+@media screen and (max-width:723px) {
+    .headerSidebar{
+        display: block;
+    }
+    header h1, .headerlink {
+        display: none;
+    }
+    header {margin: 50px 0 0; height: 100px; justify-content: baseline;}
+}
+@media screen and (max-width:889px) {
+    header h1, header h1>p {
+        display: none;
+    }
+}
+
 
 
 
@@ -126,6 +145,6 @@ footer {
 footer a {
     color: lightgrey;
     text-shadow: 1px 1px darkgray;
-    transition: 0.2s;
+    transition: opacity 0.2s ease;
 }
-footer a:hover {text-shadow: none; color: whitesmoke; font-weight: bolder;}
+footer a:hover {opacity: 0.9;}
