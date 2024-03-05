@@ -16,7 +16,7 @@ a {text-decoration: none;}
 
 
 #header {
-    margin: 30px 0 25px;
+    margin: 40px;
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 45px;
@@ -29,14 +29,24 @@ header h1>p {font-size: 15px; margin: -10px 0 0 5px; color: green;}
 #logo {width: 100px;}
 
 .headerBtn {
-    margin: 43px 0 0 20px;
+    margin: 43px 0 0 6px;
     background: none;
     border: none;
     font-size: larger;
     font-weight: bold;
 }
-.headerlink {color: green; text-shadow: 0px 1px 1px greenyellow; padding: 14px; border-radius: 12px; transition: 0.4s ease;}
-.headerlink:hover {background-color: maroon; color: white; text-shadow: none; border: 1px groove black;}
+.headerlink {
+    color: green;
+    text-shadow: 0px 1px 1px greenyellow; 
+    padding: 14px; 
+    border-radius: 12px; 
+    transition: 0.4s ease;
+}
+.headerlink:hover {
+    background-color: rgb(155, 44, 44); 
+    color: white; 
+    text-shadow: 1px 1px 3px crimson;
+}
 .headerlink:active {opacity: 0.7;}
 
 span {color: darkred; font-style: italic; font-size: 40px;}
