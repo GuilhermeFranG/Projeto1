@@ -15,21 +15,19 @@
 <body>
 
     <header>
-        <div id="header">
+        <div class="header" id="header">
             <h1>Tutto<span>Am<b>&#9829;</b>re!</span>
                 <p>Restaurante italiano</p>
             </h1>
             <img src="img/logoT!.png" alt="logo" id="logo">
             <button class="headerSidebar" onclick="toggleSidebar()">&#9776;</button>
-            <nav>
-                <div id="navigation">
-                    
-                    <button class="headerSidebar" onclick="toggleSidebar()">&times;</button>
-                    <a class="headerlink" href="#">Sobre</a>
-                    <a class="headerlink" href="#">Contato</a>
-                    <a class="headerlink" href="#">Menu</a>
-                </div>
-            </nav>
+            <div class="navigation" id="navigation">
+                <button class="headerSidebar" onclick="toggleSidebar()">&times;</button>
+                <a class="headerlink" href="#">Sobre</a>
+                <a class="headerlink" href="#">Contato</a>
+                <a class="headerlink" href="#menu">Menu</a>
+                <a class="headerlink" href="#order">Peça agora</a>
+            </div>
         </div>
     </header>
 

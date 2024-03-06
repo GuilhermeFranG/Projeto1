@@ -1,15 +1,18 @@
 var header = document.getElementById('header');
 var navigation = document.getElementById('navigation');
+var menu = document.getElementById('menu');
 var showSidebar = false;
 
 function toggleSidebar() {
     showSidebar = !showSidebar;
     if (showSidebar) {
-        navigation.style.marginLeft = '-85vw';
+        navigation.style.marginLeft = '-75vw';
         navigation.style.animationName = 'showSidebar';
+        menu.style.filter = 'blur(10px)';
     } else {
-        navigation.style.marginLeft = '-120vw';
-        navigation.style.animationName = '';
+        navigation.style.marginLeft = '-150vw';
+        navigation.style.animationName = 'closeSidebar';
+        menu.style.filter = '';
     }
 }
 
@@ -20,7 +23,10 @@ function closeSidebar() {
 }
 
 window.addEventListener('resize', function (event) {
-    if (window.innerWidth > 663 && showSidebar) {
+    if (window.innerWidth >= 750 && showSidebar) {
         toggleSidebar();
     }
+
+    // Redefine a posição do menu de navegação para a posição original //
+    navigation.style.marginLeft = '';
 });

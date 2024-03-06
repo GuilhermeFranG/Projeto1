@@ -19,6 +19,8 @@ a {text-decoration: none;}
     margin: 30px;
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
     padding-bottom: 45px;
     border-bottom: 2px solid grey;
 }
@@ -26,10 +28,9 @@ a {text-decoration: none;}
 header h1 {font-size: 35px;}
 header h1>p {font-size: 15px; margin: -10px 0 0 5px; color: green;}
 
-#logo {width: 100px;}
+#logo {width: 100px; display: none;}
 
 .headerlink {
-    margin: 0px 0 0 6px;
     background: none;
     border: none;   
     font-weight: bold;
@@ -63,6 +64,8 @@ span b {font-size: 60px; font-style: normal;}
 
 
 #navigation {
+    flex-direction: row;
+    align-items: center;
     gap: 3em;
     z-index: 2;
     margin-top: 40px;
@@ -138,7 +141,7 @@ input:focus {box-shadow: 1px 6px 6px 0px grey;}
 
 
 
-@media screen and (max-width:663px)  {
+@media screen and (max-width: 750px)  {
     .headerSidebar {
         display: block;
         margin: 20px 0 0 20vw;
@@ -150,7 +153,9 @@ input:focus {box-shadow: 1px 6px 6px 0px grey;}
 
     #navigation {
         position: absolute;
+        display: flex;
         flex-direction: column;
+        align-items: center;
         top: 0;
         background-color: whitesmoke;
         border: 1px solid darkred;
@@ -159,18 +164,22 @@ input:focus {box-shadow: 1px 6px 6px 0px grey;}
         width: 35vw;
         padding: 20px;
         animation-duration: 1s;
-        margin-left: -120vw;
+        margin-left: -150vw;
     }
-    .headerlink {display: block;}
 }
 
 @keyframes showSidebar {
-    from {margin-left: -120vw;}
-    top {margin-left: -85vw;}
+    from {margin-left: -150vw;}
+    to {margin-left: -75vw;}
+}
+@keyframes closeSidebar {
+    from {margin-left: -75vw;}
+    to {margin-left: -150vw;}   
 }
 
-@media screen and (max-width:889px) {
+@media screen and (max-width: 889px) {
     header h1 {display: none;}
+    #logo {display: inline;}
 }
 
 
