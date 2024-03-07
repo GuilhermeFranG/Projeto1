@@ -8,13 +8,13 @@
 
 body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
-a {text-decoration: none;}
+a {text-decoration: none; color: black;}
 
 
 
 
 #header {
-    margin: 30px;
+    margin: 20px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -26,7 +26,7 @@ a {text-decoration: none;}
 header h1 {font-size: 35px;}
 header h1>p {font-size: 15px; margin: -10px 0 0 5px; color: green;}
 
-#logo {width: 100px; display: none;}
+#logo {width: 120px; display: none; margin-top: 5vh;}
 
 .headerlink {
     background: none;
@@ -56,6 +56,7 @@ span b {font-size: 60px; font-style: normal;}
     cursor: pointer;
     color: darkred;
     font-style: italic;
+    margin: 35px 8vh 0 30vh;
 }
 
 
@@ -79,117 +80,9 @@ span b {font-size: 60px; font-style: normal;}
 
 
 
-
-main {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center;
-    margin: 15vh 0 30vh 0;
-}
-
-#menuHead, #menuEnd {
-    background-image: linear-gradient(to right, red,darkred 10%,green,darkred 90%,red );
-    width: 100%;
-    padding: 15px;
-    margin: 33px 0 33px;
-    border-radius: 6px;
-    text-align: center;
-    color: whitesmoke;
-    text-shadow: 2px 2px black;
-}
-
-#menu {
-    font-family: "Italiana", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    display: flex; 
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-    background-color: rgba(245, 222, 179, 0.678);
-    width: 100%;
-    padding: 10px 0 10px;
-    border-radius: 8px;
-}
-
-.type {
-    margin: 75px 40px 45px 40px;
-    font-size: 30px;
-    text-align: center;
-    text-shadow: 1px 1px green;
-    box-shadow: 1px 4px 4px darkred;
-    width: 40%;
-}
-#AllUCanEat {margin: 75px 10px 15px 0; font-size: 28px; text-shadow: 1px 0px black; width: 60%;}
-.freeFood {
-    font-size: 18px;
-    font-weight: bolder; 
-    margin: 25px 0 35px; 
-    padding-bottom: 25px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.274);
-}
-
-.food {
-    width: 70%;
-    font-size: 18px;
-    font-weight: bolder; 
-    margin: 25px 0 35px; 
-    padding-bottom: 25px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.274);
-    transition: 0.53s;
-}
-.food:hover {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(128, 39, 39);
-    color: whitesmoke;
-    text-shadow: 1px 1px 3px black;
-    cursor: pointer;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.last {border: none;}
-
-.name {font-size: 24px; margin-bottom: 6px; text-shadow: 1px 0px black;}
-
-.price {font-size: 20px; margin-top: 6px; color: red;}
-.price b {color: green;}
-
-
-
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 30px;
-}
-
-fieldset {
-    width: 30%;
-    padding: 20px;
-}
-
-input {transition: 0.35s ease-in-out;}
-input:focus {box-shadow: 1px 6px 6px 0px grey;}
-
-
-
-
 @media screen and (max-width: 750px)  {
-    .headerSidebar {
-        display: block;
-        margin: 20px 0 0 20vw;
-    }
-    #logo {
-        margin: 4vh 0 0 30px;
-        width: 130px;
-    }
+    .headerSidebar {display: block;}
+    #logo {width: 150px;}
 
     #navigation {
         position: absolute;
@@ -222,6 +115,16 @@ input:focus {box-shadow: 1px 6px 6px 0px grey;}
     #logo {display: inline;}
 }
 
+
+
+
+main {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    margin: 15vh 0 30vh 0;
+}
 
 
 
