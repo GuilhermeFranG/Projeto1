@@ -1,4 +1,5 @@
-# Projeto 1 = TuttoAmore! - Restaurnate de Comida Tradicional Italiana
+# Projeto 1 
+### `TuttoAmore! - Restaurante de Comida Tradicional Italiana`
 
 Um projeto de 30 dias de um site do meu curso de front-end.
 
