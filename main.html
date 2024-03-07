@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="img/logoT!.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Styles/Home.css" />
+    <link rel="shortcut icon" href="img/logoT!.png" type="image/x-icon" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
     </style>
@@ -16,10 +17,14 @@
 
     <header>
         <div class="header" id="header">
-            <h1>Tutto<span>Am<b>&#9829;</b>re!</span>
-                <p>Restaurante italiano</p>
-            </h1>
-            <img src="img/logoT!.png" alt="logo" id="logo">
+            <a href="main.html">
+                <h1>Tutto<span>Am<b>&#9829;</b>re!</span>
+                    <p>Restaurante italiano</p>
+                </h1>
+            </a>
+            <a href="main.html">
+                <img src="img/logoT!.png" alt="logo" id="logo">
+            </a>
             <button class="headerSidebar" onclick="toggleSidebar()">&#9776;</button>
             <div class="navigation" id="navigation">
                 <button class="headerSidebar" onclick="toggleSidebar()">&times;</button>
@@ -103,7 +108,7 @@
                     <div class="price"><b>R$</b>35,00</div>
                 </article>
                 <h3 id="AllUCanEat">Rodízio:</h3>
-                <p class="freeFood">Inclui uma variedade de pizzas, massas e sobremesas por um preço fixo de R$ 50,00 por pessoa.</p>
+                <p class="freeFood">Inclui uma variedade de pizzas, massas e sobremesas por um preço fixo de R$ 50,00por pessoa.</p>
                 <h3 class="type">Sobremesas</h3>
                 <article class="food">
                     <div class="name">Tiramisù</div>
@@ -132,6 +137,7 @@
 
 
         <section id="order">
+            <h1>Agende uma Mesa</h1>
             <form>
                 <fieldset>
                     <div>
@@ -143,7 +149,24 @@
                         <input type="email" id="email" name="email" required placeholder="E-mail ou Telefone" />
                     </div>
                 </fieldset>
+                <fieldset>
+                    <div>
+                        <select name="people" id="people">
+                            <option value="1">1 Pessoa</option>
+                            <option value="2">2 Pessoas</option>
+                            <option value="3">3 Pessoa</option>
+                            <option value="4">4 Pessoas</option>
+                            <option value="5">5 Pessoa</option>
+                            <option value="6">6 Pessoas</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="datetime-local" name="diaHora" id="diaHora" />
+                    </div>
+                </fieldset>
+                <button type="submit">Confirmar</button>    
             </form>
+            <a href="delivery.html"><button>Peça delivery</button></a>
         </section>
 
 
