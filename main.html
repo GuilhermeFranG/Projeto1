@@ -108,7 +108,8 @@
                     <div class="price"><b>R$</b>35,00</div>
                 </article>
                 <h3 id="AllUCanEat">Rodízio:</h3>
-                <p class="freeFood">Inclui uma variedade de pizzas, massas e sobremesas por um preço fixo de R$ 50,00por pessoa.</p>
+                <p class="freeFood">Inclui uma variedade de pizzas, massas e sobremesas por um preço fixo de R$ 50,00por
+                    pessoa.</p>
                 <h3 class="type">Sobremesas</h3>
                 <article class="food">
                     <div class="name">Tiramisù</div>
@@ -139,34 +140,38 @@
         <section id="order">
             <h1>Agende uma Mesa</h1>
             <form>
-                <fieldset>
-                    <div>
-                        <label for="name">Nome</label> <br>
-                        <input type="text" id="name" name="name" required placeholder="Nome" />
-                    </div>
-                    <div>
-                        <label for="email">E-mail ou Telefone</label> <br>
-                        <input type="email" id="email" name="email" required placeholder="E-mail ou Telefone" />
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div>
-                        <select name="people" id="people">
-                            <option value="1">1 Pessoa</option>
-                            <option value="2">2 Pessoas</option>
-                            <option value="3">3 Pessoa</option>
-                            <option value="4">4 Pessoas</option>
-                            <option value="5">5 Pessoa</option>
-                            <option value="6">6 Pessoas</option>
-                        </select>
-                    </div>
-                    <div>
-                        <input type="datetime-local" name="diaHora" id="diaHora" />
-                    </div>
-                </fieldset>
-                <button type="submit">Confirmar</button>    
+                <div class="formInfo">
+                    <fieldset>
+                        <div>
+                            <label for="name">Nome</label> <br>
+                            <input type="text" id="name" name="name" required placeholder="Nome" />
+                        </div>
+                        <div>
+                            <label for="email">E-mail ou Telefone</label> <br>
+                            <input type="email" id="email" name="email" required placeholder="E-mail ou Telefone" />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                            <label for="people">Quantidade</label> <br>
+                            <select name="people" id="people">
+                                <option value="1">1 Pessoa</option>
+                                <option value="2">2 Pessoas</option>
+                                <option value="3">3 Pessoas</option>
+                                <option value="4">4 Pessoas</option>
+                                <option value="5">5 Pessoas</option>
+                                <option value="6">6 Pessoas</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="diaHora">Data e Hora</label> <br>
+                            <input type="datetime-local" name="diaHora" id="diaHora" required />
+                        </div>
+                    </fieldset>
+                </div>
+                <button type="submit">Confirmar</button>
             </form>
-            <a href="delivery.html"><button>Peça delivery</button></a>
+            <a href="delivery.html"><button class="delivery">Peça delivery</button></a>
         </section>
 
 
