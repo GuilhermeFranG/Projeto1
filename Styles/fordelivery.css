@@ -12,7 +12,4 @@ fieldset {
     padding: 20px;
 }
 
-input {transition: 0.35s ease-in-out;}
-input:focus {box-shadow: 1px 6px 6px 0px grey;}
-
 input[type="checkbox"] {margin: 10px 5px 20px;}
