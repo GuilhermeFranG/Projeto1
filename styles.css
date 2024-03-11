@@ -122,6 +122,10 @@ span b {font-size: 60px; font-style: normal;}
     #logo {display: inline;}
 }
 
+@media screen and (max-width: 525px) {
+    .headerSidebar {margin: 35px 5vh 0 6vh;}
+}
+
 
 
 
