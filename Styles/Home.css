@@ -92,7 +92,7 @@ main {
 
 .name {font-size: 24px; margin-bottom: 6px; text-shadow: 1px 0px var(--color-dark1);}
 
-.price {font-size: 20px; margin-top: 6px; color: var(--color-darkred);}
+.price {font-size: 20px; margin-top: 6px; color:red;}
 .price b {color: var(--color-green);}
 
 
@@ -100,15 +100,15 @@ main {
 
 #order {
     text-align: center; 
-    margin: 10vh 0 10vh;
+    margin: 3vh 0 25vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 form {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 45px 30px 20px 30px;
 }
 .formInfo {
     display: flex;
@@ -135,7 +135,9 @@ input, select  {
     border: none;
 }
 
-label,  h1  {color: var(--color-darkred);}
+label,  h1  {color: var(--color-darkred); font-weight: bolder;}
+
+#order h1 {font-size: 36px;}
 
 .orderBtn {
     margin-top: 15px;
@@ -160,6 +162,7 @@ label,  h1  {color: var(--color-darkred);}
 
 @media screen and (max-width: 780px) {
     .formInfo {flex-direction: column;}
-    fieldset {width: 50vw;}
+    fieldset {width:70vw;}
     .freeFood {width: 80%;}
+    #order h1 {font-size: 30px;}
 }
