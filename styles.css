@@ -8,13 +8,23 @@
 
 body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
-a {text-decoration: none; color: black;}
+a {text-decoration: none; color: var(--color-dark1);}
 
 input[type="text"],  input[type="email"], select, input[type="datetime-local"] {
     transition: 0.3s ease-in-out; border: none; outline: none;}
 input[type="text"]:focus, input[type="email"]:focus, select:focus, input[type="datetime-local"]:focus {
-    box-shadow: 0px 4px 4px 0px grey;
-    border-bottom: 2px solid  black;
+    box-shadow: 0px 4px 4px 0px var(--color-dark2);
+    border-bottom: 2px solid  var(--color-dark1);
+}
+
+:root {
+    --color-green: #006800;
+    --color-darkred: #9b2c2c;
+    --color-dark1: #000;
+    --color-dark2: #808080;
+    --color-white1: #fff;
+    --color-white2: #f5f5f5;
+    --color-wheat: #f5deb3ad;
 }
 
 
@@ -27,11 +37,11 @@ input[type="text"]:focus, input[type="email"]:focus, select:focus, input[type="d
     flex-direction: row;
     align-items: center;
     padding-bottom: 45px;
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid var(--color-dark2);
 }
 
-header h1 {font-size: 35px;}
-header h1>p {font-size: 15px; margin: -10px 0 0 5px; color: green;}
+header h1 {font-size: 35px; color: var(--color-dark1);}
+header h1>p {font-size: 15px; margin: -10px 0 0 5px; color: var(--color-green);}
 
 #logo {width: 120px; display: none; margin-top: 5vh;}
 
@@ -39,20 +49,20 @@ header h1>p {font-size: 15px; margin: -10px 0 0 5px; color: green;}
     background: none;
     border: none;   
     font-weight: bold;
-    color: green;
+    color: var(--color-green);
     text-shadow: 0px 1px 1px greenyellow; 
     padding: 14px; 
     border-radius: 12px; 
     transition: 0.4s ease;
 }
 .headerlink:hover {
-    background-color: rgb(155, 44, 44); 
-    color: white; 
+    background-color: var(--color-darkred); 
+    color: var(--color-white1); 
     text-shadow: 1px 1px 3px crimson;
 }
 .headerlink:active {opacity: 0.7;}
 
-span {color: darkred; font-style: italic; font-size: 40px;}
+span {color: var(--color-darkred); font-style: italic; font-size: 40px;}
 span b {font-size: 60px; font-style: normal;}
 
 .headerSidebar {
@@ -61,7 +71,7 @@ span b {font-size: 60px; font-style: normal;}
     background-color: transparent;
     border: none;
     cursor: pointer;
-    color: darkred;
+    color: var(--color-darkred);
     font-style: italic;
     margin: 35px 8vh 0 30vh;
 }
@@ -82,7 +92,7 @@ span b {font-size: 60px; font-style: normal;}
     font-size: 18px;
     height: 100%;
     padding-top: 1px;
-    background-color: white;
+    background-color: var(--color-white1);
 }
 
 
@@ -97,8 +107,8 @@ span b {font-size: 60px; font-style: normal;}
         flex-direction: column;
         align-items: center;
         top: 0;
-        background-color: whitesmoke;
-        border: 1px solid darkred;
+        background-color: var(--color-white2);
+        border: 1px solid var(--color-darkred);
         border-radius: 8px;
         height: 100%;
         width: 35vw;
@@ -143,17 +153,12 @@ footer {
     bottom: 0;
     position: relative;
     text-align: center;
-    background-color: black;
+    background-color: var(--color-dark1);
+    box-shadow: 0px 0px 4px 2px var(--color-darkred);
     padding: 5vh 0 5vh;
     margin: 0 5vw 0 5vw;
-    color: white;
+    color: var(--color-white1);
     width: 90%;
     font-weight: 600;
 }
-
-footer a {
-    color: lightgrey;
-    text-shadow: 1px 1px darkgray;
-    transition: opacity 0.2s ease;
-}
-footer a:hover {opacity: 0.9;}
+footer a {color: var(--color-darkred); transition: opacity 0.2s ease;}

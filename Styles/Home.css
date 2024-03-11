@@ -1,3 +1,15 @@
+:root {
+    --color-green: #006800;
+    --color-darkred: #9b2c2c;
+    --color-dark1: #000;
+    --color-dark2: #808080;
+    --color-white1: #fff;
+    --color-white2: #f5f5f5; 
+    --color-wheat: #f5deb3ad;
+}
+
+
+
 main {
     display: flex; 
     flex-direction: column; 
@@ -13,8 +25,8 @@ main {
     margin: 33px 0 33px;
     border-radius: 6px;
     text-align: center;
-    color: whitesmoke;
-    text-shadow: 2px 2px black;
+    color: var(--color-white2);
+    text-shadow: 2px 2px var(--color-dark1);
 }
 
 #menu {
@@ -25,7 +37,7 @@ main {
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    background-color: rgba(245, 222, 179, 0.678);
+    background-color: var(--color-wheat);
     width: 100%;
     padding: 10px 0 10px;
     border-radius: 8px;
@@ -35,17 +47,23 @@ main {
     margin: 75px 40px 45px 40px;
     font-size: 30px;
     text-align: center;
-    text-shadow: 1px 1px green;
-    box-shadow: 1px 4px 4px darkred;
+    text-shadow: 1px 1px var(--color-green);
+    box-shadow: 1px 4px 4px var(--color-darkred);
     width: 40%;
 }
-#AllUCanEat {margin: 75px 10px 15px 0; font-size: 28px; text-shadow: 1px 0px black; width: 60%;}
+
+#AllUCanEat {
+    margin: 75px 10px 15px 0; 
+    font-size: 28px; 
+    text-shadow: 1px 0px var(--color-dark1); 
+    width: 60%;
+}
 .freeFood {
     font-size: 18px;
     font-weight: bolder; 
     margin: 25px 0 35px; 
     padding-bottom: 25px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.274);
+    border-bottom: 1px solid #80808046;
 }
 
 .food {
@@ -54,7 +72,7 @@ main {
     font-weight: bolder; 
     margin: 25px 0 35px; 
     padding-bottom: 25px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.274);
+    border-bottom: 1px solid #80808046;
     transition: 0.53s;
 }
 .food:hover {
@@ -62,9 +80,9 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(128, 39, 39);
-    color: whitesmoke;
-    text-shadow: 1px 1px 3px black;
+    background-color: var(--color-darkred);
+    color: var(--color-white2);
+    text-shadow: 1px 1px 3px var(--color-dark1);
     cursor: pointer;
     padding: 20px;
     border-radius: 8px;
@@ -72,10 +90,10 @@ main {
 
 .last {border: none;}
 
-.name {font-size: 24px; margin-bottom: 6px; text-shadow: 1px 0px black;}
+.name {font-size: 24px; margin-bottom: 6px; text-shadow: 1px 0px var(--color-dark1);}
 
-.price {font-size: 20px; margin-top: 6px; color: red;}
-.price b {color: green;}
+.price {font-size: 20px; margin-top: 6px; color: var(--color-darkred);}
+.price b {color: var(--color-green);}
 
 
 
@@ -95,9 +113,9 @@ form {
 .formInfo {
     display: flex;
     flex-direction: row;
-    border: 1px solid maroon;
+    border: 1px solid var(--color-darkred);
     border-radius: 8px;
-    background-color: rgba(245, 222, 179, 0.678);
+    background-color: var(--color-wheat);
 }
 
 fieldset {
@@ -113,24 +131,24 @@ fieldset {
 input, select  {
     margin: 6vh 0 5vh;
     padding: 6px;
-    background-color: rgba(245, 222, 179, 0.76);
+    background-color: var(--color-wheat);
     border: none;
 }
 
-label,  h1  {color: maroon;}
+label,  h1  {color: var(--color-darkred);}
 
 .orderBtn {
     margin-top: 15px;
     padding: 12px;
-    background-color: wheat;
+    background-color: var(--color-wheat);
     border: none;
     transition: ease-in 0.2s;
     cursor: pointer;
 }
 .orderBtn:hover {
-    background-color: maroon;
-    border: 1px brown solid;
-    color: whitesmoke;
+    background-color: var(--color-darkred);
+    border: 1px solid maroon;
+    color: var(--color-white2);
     border-radius: 8px;
     transform: scale(1.2);
     font-weight: bold;

@@ -1,3 +1,15 @@
+:root {
+    --color-green: #006800;
+    --color-darkred: #9b2c2c;
+    --color-dark1: #000;
+    --color-dark2: #808080;
+    --color-white1: #fff;
+    --color-white2: #f5f5f5; 
+    --color-wheat: #f5deb3ad;
+}
+
+
+
 form {
     display: flex;
     flex-direction: column;
