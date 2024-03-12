@@ -30,3 +30,5 @@ window.addEventListener('resize', function (event) {
     // Redefine a posição do menu de navegação para a posição original //
     navigation.style.marginLeft = '';
 });
+
+document.getElementById("people").selectedIndex = 1;
