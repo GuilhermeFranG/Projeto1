@@ -18,7 +18,7 @@ form {
     align-items: center;
     justify-content: center;
     margin: 30px 0 20px;
-    width: 58%;
+    width: 60%;
     text-shadow: 1px 1px 2px var(--color-dark2);
     border: 3px solid var(--color-wheat);
     padding: 50px;
@@ -49,11 +49,19 @@ label[for="bebidas"] {color: #82cae2;}
 
 .optDescription {margin-bottom: 10px;}
 
+.phoneNumber {margin-top: 40px;}
+.buon {
+    font-size: 20px;
+    color: var(--color-darkred);
+    background-color: #00800073;
+    padding: 10px;
+    border-radius: 8px;
+}
 
 
 
-button {
-    margin-top: 30px;
+button[type="submit"] {
+    margin: 30px 0 100px;
     padding: 12px;
     font-weight: bold;
     font-size: 20px;
@@ -61,10 +69,20 @@ button {
     transition: ease-out 0.3s;
     cursor: pointer;
 }
-button:hover {
+button[type="submit"]:hover {
     background-color: var(--color-darkred);
     border: 1px solid maroon;
     color: var(--color-white2);
     border-radius: 8px;
     transform: scale(1.2);
 } 
+
+
+
+@media screen and (max-width: 710px) {
+    form {width: 100%;}
+}
+@media screen and (max-width: 400px) {
+    form {width: 120vw;}
+    #header {margin: 0 -20px 0 20px;}
+}
