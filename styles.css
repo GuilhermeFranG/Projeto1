@@ -8,7 +8,7 @@
 
 body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
-a {text-decoration: none; color: var(--color-dark1);}
+a {text-decoration: none; color: var(--color-dark1); font-weight: bolder;}
 
 input[type="text"],  input[type="email"], select, input[type="datetime-local"] {
     transition: 0.3s ease-in-out; border: none; outline: none;}
