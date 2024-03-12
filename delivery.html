@@ -36,12 +36,56 @@
         <h1>Faça seu pedido</h1>
         <form>
             <fieldset>
-                <div>
+                <div class="options">
                     <label for="entradas">Antipasti</label> <br>
-                    <input type="checkbox" name="" id="" />Bruschetta Clássica
-                    <p>atias de pão italiano torrado com tomates frescos, manjericão e azeite de oliva</p><b>R$ 15,00</b>  <br>
-                    <input type="checkbox" name="" id="" />Polenta Frita
-                    <p>Deliciosos pedaços de polenta crocante servidos com molho marinara para mergulhar</p><b>R$ 16,00</b>
+                    <input type="checkbox" name="entradas" class="entradas" /><b class="optName">Bruschetta Clássica</b>
+                    <p class="optDescription">Fatias de pão italiano torrado com tomates frescos, manjericão e azeite de oliva</p>
+                    <b>R$ 15,00</b> <br>
+                    <input type="checkbox" name="entradas" class="entradas" /><b class="optName">Polenta Frita</b>
+                    <p class="optDescription">Deliciosos pedaços de polenta crocante servidos com molho marinara para mergulhar</p>
+                    <b>R$ 16,00</b>
+                </div>
+                <div class="options">
+                    <label for="principais">Principais</label> <br>
+                    <input type="checkbox" name="principais" class="principais" /><b class="optName">Spaghetti alla Carbonara</b>
+                    <p class="optDescription">Espaguete cozido al dente com molho à base de ovos, queijo parmesão, pancetta e pimenta-do-reino moída</p>
+                    <b>R$ 35,00</b> <br>
+                    <input type="checkbox" name="principais" class="principais" /><b class="optName">Lasanha à Bolonhesa</b>
+                    <p class="optDescription">Camadas de massa fresca intercaladas com molho bolonhesa e queijo</p>
+                    <b>R$ 22,00</b> 
+                </div>
+                <div class="options">
+                    <label for="pizzas">Pizzas</label> <br>
+                    <input type="checkbox" name="pizzas" class="pizzas" /><b class="optName">Pizza Margherita</b>
+                    <p class="optDescription">Uma pizza clássica com molho de tomate, mussarela de búfala fresca, tomate fatiado e manjericão fresco</p>
+                    <b>R$ 35,00</b> <br>
+                    <input type="checkbox" name="pizzas" class="pizzas" /><b class="optName">Pizza Quattro Stagioni</b>
+                    <p class="optDescription">Uma pizza dividida em quatro seções, para cada estação do ano: cogumelos, presunto, alcachofras e azeitonas</p>
+                    <b>R$ 40,00</b> 
+                </div>
+                <div class="options">
+                    <label for="sobremesas">Sobremesas</label> <br>
+                    <input type="checkbox" name="sobremesas" class="sobremesas" /><b class="optName">Tiramisù</b>
+                    <p class="optDescription">Um clássico da culinária italiana, o tiramisù é feito com camadas de biscoitos embebidos em café, creme de queijo mascarpone e cacau em pó</p>
+                    <b>R$ 25,00</b> <br>
+                    <input type="checkbox" name="sobremesas" class="sobremesas" /><b class="optName">Cannoli</b>
+                    <p class="optDescription">Tubos crocantes de massa frita recheados com um creme doce de queijo ricota e pedaços de frutas cristalizadas</p>
+                    <b>R$ 20,00</b> 
+                </div>
+                <div class="options">
+                    <label for="bebidas">Bebidas</label> <br>
+                    <input type="checkbox" name="bebidas" class="bebidas" /><b class="optName">Vinho Italiano</b>
+                    <p class="optDescription">Uma seleção de vinhos italianos cuidadosamente escolhidos para complementar sua refeição</p>
+                    <b>R$ 40,00 por garrafa</b> <br>
+                    <input type="checkbox" name="bebidas" class="bebidas" /><b class="optName">Água Mineral</b>
+                    <p class="optDescription">Refresque-se com uma garrafa de água mineral gelada</p>
+                    <b>R$ 5,00 por garrafa</b> <br>
+                    <input type="checkbox" name="bebidas" class="bebidas" /><b class="optName">Limoncello</b>
+                    <p class="optDescription">Uma bebida tradicional italiana feita com limões, açúcar e álcool</p>
+                    <b>R$ 15,00 por dose</b> <br>
+                    <input type="checkbox" name="bebidas" class="bebidas" /><b class="optName">Negroni</b>
+                    <p class="optDescription">Um clássico coquetel italiano feito com gin, vermute doce e Campari</p>
+                    <b>R$ 25,00 por dose</b>
                 </div>
             </fieldset>
             <button type="submit">Confirmar</button>
