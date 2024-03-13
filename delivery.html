@@ -38,68 +38,76 @@
             <fieldset>
                 <div class="options">
                     <label for="entradas">Antipasti</label> <br>
-                    <input type="checkbox" name="entradas" class="entradas" /><b class="optName">Bruschetta Clássica</b>
+                    <input type="checkbox" name="entradas" class="entradas" value="15" /><b class="optName">Bruschetta Clássica</b>
                     <p class="optDescription">Fatias de pão italiano torrado com tomates frescos, manjericão e azeite de
                         oliva</p>
                     <b>R$ 15,00</b> <br>
-                    <input type="checkbox" name="entradas" class="entradas" /><b class="optName">Polenta Frita</b>
+                    <input type="checkbox" name="entradas" class="entradas" value="16" /><b class="optName">Polenta Frita</b>
                     <p class="optDescription">Deliciosos pedaços de polenta crocante servidos com molho marinara para
                         mergulhar</p>
                     <b>R$ 16,00</b>
                 </div>
                 <div class="options">
                     <label for="principais">Principais</label> <br>
-                    <input type="checkbox" name="principais" class="principais" /><b class="optName">Spaghetti alla
+                    <input type="checkbox" name="principais" class="principais" value="35" /><b class="optName">Spaghetti alla
                         Carbonara</b>
                     <p class="optDescription">Espaguete cozido al dente com molho à base de ovos, queijo parmesão,
                         pancetta e pimenta-do-reino moída</p>
                     <b>R$ 35,00</b> <br>
-                    <input type="checkbox" name="principais" class="principais" /><b class="optName">Lasanha à
+                    <input type="checkbox" name="principais" class="principais" value="22" /><b class="optName">Lasanha à
                         Bolonhesa</b>
                     <p class="optDescription">Camadas de massa fresca intercaladas com molho bolonhesa e queijo</p>
                     <b>R$ 22,00</b>
                 </div>
                 <div class="options">
                     <label for="pizzas">Pizzas</label> <br>
-                    <input type="checkbox" name="pizzas" class="pizzas" /><b class="optName">Pizza Margherita</b>
+                    <input type="checkbox" name="pizzas" class="pizzas" value="35" /><b class="optName">Pizza Margherita</b>
                     <p class="optDescription">Uma pizza clássica com molho de tomate, mussarela de búfala fresca, tomate
                         fatiado e manjericão fresco</p>
                     <b>R$ 35,00</b> <br>
-                    <input type="checkbox" name="pizzas" class="pizzas" /><b class="optName">Pizza Quattro Stagioni</b>
+                    <input type="checkbox" name="pizzas" class="pizzas" value="40" /><b class="optName">Pizza Quattro Stagioni</b>
                     <p class="optDescription">Uma pizza dividida em quatro seções, para cada estação do ano: cogumelos,
                         presunto, alcachofras e azeitonas</p>
                     <b>R$ 40,00</b>
                 </div>
                 <div class="options">
                     <label for="sobremesas">Sobremesas</label> <br>
-                    <input type="checkbox" name="sobremesas" class="sobremesas" /><b class="optName">Tiramisù</b>
+                    <input type="checkbox" name="sobremesas" class="sobremesas" value="25" /><b class="optName">Tiramisù</b>
                     <p class="optDescription">Um clássico da culinária italiana, o tiramisù é feito com camadas de
                         biscoitos embebidos em café, creme de queijo mascarpone e cacau em pó</p>
                     <b>R$ 25,00</b> <br>
-                    <input type="checkbox" name="sobremesas" class="sobremesas" /><b class="optName">Cannoli</b>
+                    <input type="checkbox" name="sobremesas" class="sobremesas" value="20" /><b class="optName">Cannoli</b>
                     <p class="optDescription">Tubos crocantes de massa frita recheados com um creme doce de queijo
                         ricota e pedaços de frutas cristalizadas</p>
                     <b>R$ 20,00</b>
                 </div>
                 <div class="options">
                     <label for="bebidas">Bebidas</label> <br>
-                    <input type="checkbox" name="bebidas" class="bebidas" /><b class="optName">Vinho Italiano</b>
+                    <input type="checkbox" name="bebidas" class="bebidas" value="40" /><b class="optName">Vinho Italiano</b>
                     <p class="optDescription">Uma seleção de vinhos italianos cuidadosamente escolhidos para
                         complementar sua refeição</p>
                     <b>R$ 40,00 por garrafa</b> <br>
-                    <input type="checkbox" name="bebidas" class="bebidas" /><b class="optName">Água Mineral</b>
+                    <label for="qnt" class="qntText">Quantidade:</label>
+                    <input type="number" class="qnt" name="qnt" min="0" value="0" /> <br>
+                    <input type="checkbox" name="bebidas" class="bebidas" value="5" /><b class="optName">Água Mineral</b>
                     <p class="optDescription">Refresque-se com uma garrafa de água mineral gelada</p>
                     <b>R$ 5,00 por garrafa</b> <br>
-                    <input type="checkbox" name="bebidas" class="bebidas" /><b class="optName">Limoncello</b>
+                    <label for="qnt" class="qntText">Quantidade:</label>
+                    <input type="number" class="qnt" name="qnt" min="0" value="0" /> <br>
+                    <input type="checkbox" name="bebidas" class="bebidas" value="15" /><b class="optName">Limoncello</b>
                     <p class="optDescription">Uma bebida tradicional italiana feita com limões, açúcar e álcool</p>
                     <b>R$ 15,00 por dose</b> <br>
-                    <input type="checkbox" name="bebidas" class="bebidas" /><b class="optName">Negroni</b>
+                    <label for="qnt" class="qntText">Quantidade:</label>
+                    <input type="number" class="qnt" name="qnt" min="0" value="0" /> <br>
+                    <input type="checkbox" name="bebidas" class="bebidas" value="25" /><b class="optName">Negroni</b>
                     <p class="optDescription">Um clássico coquetel italiano feito com gin, vermute doce e Campari</p>
-                    <b>R$ 25,00 por dose</b>
+                    <b>R$ 25,00 por dose</b> <br> 
+                    <label for="qnt" class="qntText">Quantidade:</label>
+                    <input type="number" class="qnt" name="qnt" min="0" value="0" />
                 </div>
             </fieldset>
-            <button type="submit">Confirmar</button>
             <p id="total"></p>
+            <button type="submit">Confirmar</button>
             <p class="phoneNumber">Ligue para o número <a href="https://wa.me/5199732280">(051) 99973-2280</a> ou faça seu pedido online através do nosso site
                 para desfrutar da autêntica
                 culinária italiana no conforto da sua casa. Entregamos em toda a região com rapidez e segurança. 
