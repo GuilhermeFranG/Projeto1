@@ -58,6 +58,20 @@ label[for="bebidas"] {color: #82cae2;}
     border-radius: 8px;
 }
 
+.qntText {font-size: 15px; text-shadow: 1px 1px 2px var(--color-dark2);}
+.qnt {
+    width: 40px; 
+    padding: 4px 0 4px 10px;
+    margin: 20px 0 0 10px; 
+    font-weight: bolder; 
+    border: 1px solid var(--color-dark1); 
+    border-radius: 4px;
+    outline: none;
+}
+
+
+
+
 
 
 button[type="submit"] {
