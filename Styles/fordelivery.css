@@ -60,7 +60,19 @@ label[for="bebidas"] {color: #82cae2;}
 
 
 
-#total {font-weight: bold; font-size: 22px; margin: 15px 0 15px;}
+#total {
+    display: none;
+    font-weight: bold;
+    font-size: 28px; 
+    margin: 15px 0 25px;
+    padding: 30px;
+    z-index: 2;
+    position: sticky;
+    bottom: 20px;
+    background-color: var(--color-darkred);
+    border-radius: 8px;
+    color: var(--color-white1);
+}
 
 .qntText {font-size: 15px; text-shadow: 1px 1px 2px var(--color-dark2);}
 .qnt {

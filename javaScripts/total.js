@@ -11,6 +11,7 @@ function calcularTotal() {
     // Define o elemeto total e seu valor
     var totalElement = document.getElementById('total');
     totalElement.innerText = "Total: R$ " + totalValue.toFixed(2);
+    totalElement.style.display = "block";
 }
 
 // Adicionar um evento de clique a todos os checkboxes
